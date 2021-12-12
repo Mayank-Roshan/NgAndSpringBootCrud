@@ -34,3 +34,16 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: #707070;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.emerald-snackbar {
+    background: #50c878;
+    z-index: 1000000000000 !important;
+}
+/*This is needed to fix the zindex issue of material snackbar over bootstrap modal*/
+.cdk-overlay-container {
+    position: fixed;
+    z-index: 10000;
+}
+
