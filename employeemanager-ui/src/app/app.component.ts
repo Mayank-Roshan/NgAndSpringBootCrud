@@ -53,6 +53,7 @@ export class AppComponent implements OnInit {
     button.setAttribute('data-toggle','modal');
 
     if(mode==='add'){
+      this.resetEmployeeForm();
       button.setAttribute('data-target','#addEmployeeModal');
     }
     else if(mode==='edit'){
